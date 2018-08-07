@@ -170,4 +170,17 @@ h1{
         width: 100%;
         border-bottom: 2px solid #d2d2d2;
     }
+    #sidebar{
+        width: 100%;
+        float: none;
+        position: relative;
+
+    }
+    #sidebar p,#sidebar h1{
+        text-align: center;
+    }
+    #main-Content-bar{
+        width: 100%;
+        float: none;
+    }
 }
