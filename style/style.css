@@ -1,0 +1,173 @@
+.my-p{
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 1.3em;
+    line-height: 1.71;
+
+    display: block;
+    font-weight: 600;
+}
+.big-text{
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.fl{
+    float: left
+}
+.wm{
+    /*width: 30%;*/
+    width: fit-content;
+}
+.head
+{
+    height: 5em;
+        background: white;
+    padding: .5em;
+}
+h1{
+    font-size: 36px;
+        font-family: inherit;
+    font-weight: 600;
+    line-height: 1.1;
+    color: inherit;
+    margin: auto;
+}
+.main{
+    padding: 0 1em;
+    margin: auto;
+}
+.tc{
+    text-align: center
+}
+.top ,.mid{
+    width: 70%;
+    padding: 1em;
+    margin: auto;
+}
+.bt{
+    font-weight: 600;
+}
+.top table{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.top table  tr{
+   height: 2em;
+}
+.tl{
+    text-align: left;
+}
+.tr{
+    text-align: right;
+}
+.skills-set{
+    width: 100%;
+
+}
+.container{
+
+    margin: auto;
+}
+.fclr{
+    float: none;
+
+}
+.fr{
+    float: right;
+}
+.sd{
+    width: 100%;
+}
+.md{
+    width: 45%;
+}
+.smalld{
+    width: 29%;
+}
+.xd{
+    width: 69%;
+}
+.skills-p{
+    padding: .5em;
+    font-weight: 600;
+    text-align: right
+}
+.skill-chart{
+    box-shadow: 0px 1px 9px 2px rgba(0,0,0,.3);
+    width: 0;
+        color: white;
+    padding: .5em;
+    text-align: left;
+        height: 2em;
+    background: #f75d5d;
+    margin: 1em;
+}
+.px{
+    padding: 0 1em;
+}
+
+.gtext{
+    color: #7beec7;
+}
+
+.box-underline::after{
+    content: "";
+    background-color: #7beec7;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    z-index: -1;
+    width: 102%;
+    height: 20px;
+    transform: rotate(-2deg);
+}
+
+
+@media only screen and (max-width : 500px){
+    hmtl,body
+    {
+        font-size: 18px;
+    }
+    .main{
+        padding: 0;
+    }
+    .head{
+        height: 3em;
+    }
+    .wm{
+        width: fit-content;
+        float: none;
+        margin: auto
+    }
+    .top ,.mid{
+    width: 95%;
+    padding: 1em 0;
+    margin: auto;
+    }
+    .top table{
+        width: 100%;
+    }
+    .about-me h2 , .skills-set h2 {
+        text-align: center;
+    }
+    .about-me p{
+        text-align: justify
+    }
+    .smalld{
+        width: 100%;
+    }
+    .skills-p{
+        text-align: center
+    }
+    .xd{
+        width: 100%;
+        border-bottom: 2px solid #d2d2d2;
+    }
+}
