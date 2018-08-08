@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/tailwind.min.css">
     <link rel="stylesheet" href="style/utilities.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="./js/w3.js"></script>
 </head>
 <style>
 
@@ -36,17 +37,7 @@
     <!-- Side Bar Ends Here -->
     <!--  Main COntent Starts Here -->
     <div id="main-Content-bar" class="w-5/6 bg-white relative float-right  text-left text-grey-darkest">
-        <div class='head'>
-                <div class="fr wm px">
-                    <div class="fl wm">
-                        <a href="#projects" class="my-p gtext no-underline">Projects</a>
-                    </div>
-                    <div class="fl wm px">
-                        <a href="" class="my-p gtext no-underline">Skills</a>
-                    </div>
-                </div>
-
-            </div>
+        <div w3-include-html="./layout/nav.html"></div>
         <!-- change from here  -->
 
 
@@ -206,6 +197,11 @@
         </div>
     </div>
     <!-- Main Content Ends Here -->
+
 </body>
+<script>
+        w3.includeHTML();
+      </script>
+
 
 </html>
