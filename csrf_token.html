@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSRF-TOKEN-DEMO-PHP</title>
+    <link rel="stylesheet" href="style/preflight.min.css">
+    <link rel="stylesheet" href="style/utilities.min.css">
+    <link rel="stylesheet" href="style/tailwind.min.css">
+    <link rel="stylesheet" href="style/utilities.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@atlassian/aui@8.1.0/dist/aui/aui-prototyping.css" />
+
+</head>
+<style>
+
+</style>
+
+<body class="w-full bg-white font-sans">
+    <!--  Side bar Starts Here -->
+    <div id="sidebar" class="w-1/6 overflow-auto  p-2 bg-grey-lightest text-right fixed float-left text-grey-darker h-full">
+        <div class="h-12"></div>
+        <div class="w-full py-6 ">
+            <h1 class="text-3xl content-center  m-2 my-6 text-grey-darkest">
+                Manual CSRF Token php
+                <!-- Change this name -->
+            </h1>
+            <p class="font-semibold  text-xl m-2 my-6">Aniketh Saha</p>
+
+        </div>
+        <div class="w-full p-2 my-4  text-right text-sm no-underline font-semibold">
+            <!-- change these a tags value -->
+            <p class="w-full my-2"><a href="#intro" class="font-semibold  text-lg text-grey-darker no-underline">
+                    Intoduction </a></p>
+            <p class="w-full my-2"><a href="#abt" class="font-semibold  text-lg text-grey-darker no-underline"> About
+                </a></p>
+            <p class="w-full my-2"><a href="#get-started" class="font-semibold  text-lg text-grey-darker no-underline">
+                    Getting Started </a></p>
+            <p class="w-full my-2"><a href="#wid" class="font-semibold  text-lg text-grey-darker no-underline"> What I Did </a></p>
+        </div>
+    </div>
+    <!-- Side Bar Ends Here -->
+    <!--  Main COntent Starts Here -->
+    <div id="main-Content-bar" class="w-5/6 bg-white relative float-right  text-left text-grey-darkest">
+        <div class='head'>
+            <div class="fr wm px">
+                <div class="fl wm">
+                    <a href="#projects" class="my-p gtext no-underline">Projects</a>
+                </div>
+                <div class="fl wm px">
+                    <a href="" class="my-p gtext no-underline">Skills</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- change from here  -->
+
+
+
+
+
+        <div class="w-full  p-6">
+            <!-- Intro Starts Here -->
+            <div class="w-full my-4" id="intro">
+                <h1 class="big-text text-5xl  tracking-wide  ">Introduction</h1>
+
+                <p class="tracking-wide font-semibold text-grey-darker leading-loose">In this project I have shown how
+                    the <span class="aui-lozenge aui-lozenge-success">SIMPLE</span>
+                    idea behind the protection of
+                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-error">CROSS-SITE-REQUEST-FORGERY</span>
+                    attacks is implement using
+                    <span class="aui-lozenge  aui-lozenge-new">CSRF-TOKEN</span>
+
+                </p>
+                <img class="w-full p-6" src="https://i.imgur.com/3ILSy0I.gif" alt="" srcset="">
+            </div>
+
+            <!-- gap -->
+            <div class="h-6"></div>
+            <!-- about Starts Here -->
+            <div class="w-full my-4" id="abt">
+                <h1 class="big-text text-5xl  tracking-wide  ">About</h1>
+                <div class="tracking-wide font-semibold text-grey-darker leading-loose">
+
+
+                    <div class="w-full">
+                        <p class=" py-6 text-xl font-semibold  rounded text-grey-darker"> Cross-Site Request Forgery
+                            (CSRF)</p>
+                        <p>
+                            Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted
+                            actions on a web application in which they're currently authenticated. CSRF attacks
+                            specifically target state-changing requests, not theft of data, since the attacker has no
+                            way to see the response to the forged request. With a little help of social engineering
+                            (such as sending a link via email or chat), an attacker may trick the users of a web
+                            application into executing actions of the attacker's choosing. If the victim is a normal
+                            user, a successful CSRF attack can force the user to perform state changing requests like
+                            transferring funds, changing their email address, and so forth. If the victim is an
+                            administrative account, CSRF can compromise the entire web application.
+                            <span class="aui-lozenge  aui-lozenge-current"> <strong> Source :</strong> </span> <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)">OWASP</a>
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- gap -->
+            <div class="h-6"></div>
+            <!-- About Ends Here -->
+            <div class="w-full my-4" id="get-started">
+
+                <h1 class="big-text text-5xl  tracking-wide  ">How to start</h1>
+
+                <p class="tracking-wide font-semibold text-grey-darker leading-loose">Simple : Download the zip or
+                    clone this repository then run the <code>index.php</code> using
+                    your localhost server. The Database creation with the Schema of the table is in the <code>dbconfig.php</code>
+                    Do read the comment in this files</p>
+            </div>
+
+            <!-- gap -->
+            <div class="h-6"></div>
+            <div class="w-full my-4" id="wid">
+                <h1 class="big-text text-5xl  tracking-wide  ">What I did</h1>
+
+
+                <h5 class="big-text text-xl  tracking-wide w-full "><a id="Algorithm_Used_For_encryption_8"></a>Algorithm
+                    Used For encryption</h5>
+                <p class="tracking-wide font-semibold text-grey-darker leading-loose">-&gt; <code>sha256</code> for Key
+                    and iv encryption<br> -&gt; <code>openssl</code> for session
+                    encryption - method used : <code>AES-256-CBC</code><br> -&gt; <code>BCRYPT</code> for csrf_token
+                    encryption as this is one way encryption algorithm and we just need to verify the token not decrypt
+                    it</p>
+
+                <br />
+                <h5 class="big-text text-xl  tracking-wide  ">CSRF protection methology</h5>
+                <p class="tracking-wide font-semibold text-grey-darker leading-loose">-&gt; We get the token from <code>csrf_token.php</code>
+                    which is giving me the token plus putting
+                    the same token in cookie .<br> -&gt; We get the token pnly if we visit the <code>index.php</code>
+                    that means a attacker has to visit this<br> -&gt; if not then the token wont be valid<br> -&gt;
+                    Considering a situation if somehow the attacker get a valid token ,then he/she will be using that
+                    int the request header in a remote form but this wont be validated as your cookie will be having
+                    different token from this<br> -&gt; You can surely add or contribute in this project to validate
+                    the cookie token and header token more precisely</p>
+            </div>
+            <!-- Intro ENds Here -->
+
+
+
+
+
+
+
+            <!-- How To Use Ends Here -->
+
+
+
+        </div>
+    </div>
+    <!-- Main Content Ends Here -->
+
+</body>
+
+
+</html>

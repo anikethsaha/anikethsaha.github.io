@@ -1,12 +1,3 @@
-a:hover{
-    text-decoration: none !important;
-}
-.bg-white{
-    background-color: white !important;
-}
-.bg-inherit{
-    background: inherit !important;
-}
 .my-p{
     font-family: "Proxima Nova",sans-serif;
     font-size: 1.3em;

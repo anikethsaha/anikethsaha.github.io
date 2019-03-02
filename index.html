@@ -1,212 +1,567 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aniketh</title>
+    <title>Aniketh Saha</title>
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <link rel="stylesheet" href="style/preflight.min.css">
     <link rel="stylesheet" href="style/utilities.min.css">
     <link rel="stylesheet" href="style/tailwind.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@atlassian/aui@8.1.0/dist/aui/aui-prototyping.css" />
     <script src="./js/w3.js"></script>
 </head>
+
 <body class="w-full font-sans ">
-    <div w3-include-html="./layout/nav.html"></div>
+    <section id="content" role="main">
+        <!-- AUI Sidebar -->
+        <div class="aui-sidebar" style="position: fixed !important">
+            <div class="aui-sidebar-wrapper h-auto" style="position: fixed !important;bottom: 0 !important">
+                <div class="aui-sidebar-body">
 
+                    <!-- AUI Page Header -->
+                    <header class="aui-page-header">
+                        <div class="aui-page-header-inner">
+                            <div class="aui-page-header-image">
+                                <span class="aui-avatar aui-avatar-project aui-avatar-large">
+                                    <span class="aui-avatar-inner">
+                                        <img src="images/avatar-project.svg" alt="" role="presentation" />
+                                    </span>
+                                </span>
 
-
-    <!-- Gap -->
-    <div class="h-24 my-4"></div>
-    <!-- Gap End -->
-
-    <div class="w-full  p-6 ">
-        <h1 class="big-text text-5xl  tracking-wide  text-left box-underline">Aniketh Saha</h1>
-
-            <pre class="w-full overflow-auto text-grey-darkest tracking-wide font-semibold ">LEARNER  CODER  PROGRAMMER  DEVELOPER</pre>
-
-    </div>
-
-     <!-- Gap -->
-     <div class="h-24 my-4"></div>
-     <!-- Gap End -->
-
-
-
-    <div class="w-full p-6 text-center">
-        <h1 class="big-text box-underline  " id="projects">
-            Projects
-        </h1>
-        <div class="w-full flex flex-wrap my-12">
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class=" overflow-hidden shadow-lg  ">
-                            <img class="w-full" src="https://i.ytimg.com/vi/HKqbBrl_fKc/maxresdefault.jpg" alt="Sunset in the mountains">
-                            <div class="px-6 py-4">
-                            <a href="./doc-merng.html" class="no-underline  text-grey-darkest">
-                                <div class="font-bold text-xl mb-2">MERNG-BoilerPlate</div>
-                            </a>
-
-
-                            <p class="text-grey-darker text-base">
-                                    This is boilerplate for MERN stack with GraphQL and with integrations like Redux and SSR
-                            </p>
                             </div>
-                            <div class="px-6 py-4">
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">nodejs</span>
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">redux</span>
-
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">graphql</span>
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">mongodb</span>
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">ssr</span>
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
-                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">expressjs</span>
+                            <div class="aui-page-header-main">
+                                <h1>
+                                    Aniketh Saha
+                                </h1>
+                                <ol class="aui-nav aui-nav-breadcrumbs">
+                                    <li>
+                                        <a href="https://github.com/anikethsaha"><span class="aui-nav-item-label">My
+                                                Github</span></a>
+                                    </li>
+                                </ol>
                             </div>
-                    </div>
+                        </div>
+                    </header>
+
+                    <!-- AUI Navigation -->
+                    <nav class="aui-navgroup aui-navgroup-vertical">
+                        <div class="aui-navgroup-inner">
+
+                            <!-- A Sidebar group will collapse into a single trigger icon when sidebar is collapsed -->
+                            <!-- The 'actions' sidebar group type will be styled differently from normal groups when sidebar is collapsed -->
+                            <div class="aui-sidebar-group aui-sidebar-group-actions">
+
+                                <!-- the AUI Nav heading will be used as the tooltip text -->
+                                <div class="aui-nav-heading" title="Actions">
+                                    <strong>Actions</strong>
+                                </div>
+
+                                <!-- If a sidebar group does not have a nav heading, then the aui-nav's title attribute will be used
+                                     for the tooltip for the group -->
+                                <ul class="aui-nav" title="Page actions">
+                                    <li>
+                                        <a class="aui-nav-item" href="#" title="Edit">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#" title="View">View</a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#" title="Share">Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- A "Tier One" Sidebar group will display all of its nav items, but all nav items MUST have an AUI Icon
+                                 which will be used when the sidebar is collapsed -->
+                            <div class="aui-sidebar-group aui-sidebar-group-tier-one">
+
+                                <!-- in a "Tier One" Sidebar group, AUI Nav heading is ignored, and each nav item's label will be used
+                                     as the tooltip text instead -->
+                                <div class="aui-nav-heading" title="Stuff">
+                                    <strong>Navigation</strong>
+                                </div>
+
+                                <ul class="aui-nav">
+                                    <li class="aui-nav-selected">
+                                        <a class="aui-nav-item" href="/#">
+
+                                            <!-- "Tier One" navigation items MUST have an AUI Icon before the text label -->
+
+                                            <span class="aui-icon aui-icon-small aui-iconfont-home-filled"></span>
+
+                                            <!-- "Tier One" Nav items labels also need an extra SPAN around them with the aui-nav-item-label class -->
+                                            <span class="aui-nav-item-label">Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#projects" title="This is a really really long title for whatever this is">
+                                            <span class="aui-icon aui-icon-small aui-iconfont-book"></span>
+                                            <span class="aui-nav-item-label">Projects</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#">
+                                            <span class="aui-icon aui-icon-small aui-iconfont-portfolio"></span>
+                                            <span class="aui-nav-item-label">Skills</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#">
+                                            <span class="aui-icon aui-icon-small aui-iconfont-time"></span>
+                                            <span class="aui-nav-item-label">Versions</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#">
+                                            <span class="aui-icon aui-icon-small aui-iconfont-devtools-submodule"></span>
+                                            <span class="aui-nav-item-label">Components</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#">
+                                            <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag"></span>
+                                            <span class="aui-nav-item-label">Labels</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+
+                <!-- Sidebar footer contains the expand/collapse trigger, and optionally a button or a dropdown with configuration settings -->
+                <div class="aui-sidebar-footer">
+
+                    <a class="aui-button aui-button-subtle aui-sidebar-toggle aui-sidebar-footer-tipsy">
+                        <span class="aui-icon aui-icon-small"></span>
+                    </a>
+                </div>
+            </div>
+        </div><!-- end AUI Sidebar -->
+
+        <div class="aui-page-panel  border-0">
+            <div class="aui-page-panel-inner">
+                <section class="aui-page-panel-content">
 
 
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://s3-ap-southeast-1.amazonaws.com/bprbfpv/wp-content/uploads/2017/11/15185752/TSS-logoword-800x.png" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">CSRF-token-php-Manual</div>
-                        <p class="text-grey-darker text-base">
-                                In this project I have shown how the SIMPLE idea behind the protection of CROSS-SITE-REQUEST-FORGERY attacks is implement using CSRF-TOKEN
+                    <div class="w-full  p-6 ">
+                        <h1 class="big-text text-5xl  tracking-wide  text-left box-underline">Aniketh Saha</h1>
+
+                        <pre class="w-full overflow-auto text-grey-darkest tracking-wide font-semibold "><span class="aui-lozenge aui-lozenge-moved">LEARNER</span>  <span class="aui-lozenge aui-lozenge-new">CODER</span>  <span class="aui-lozenge aui-lozenge-current">PROGRAMMER</span>  <span class="aui-lozenge aui-lozenge-success">DEVELOPER</span></pre>
+
+                    </div>
+
+                    <div class="w-full py-2 px-6">
+                        <h1 class="big-text ">About Me</h1>
+                        <p class="text-xl">
+                            I am Web developer with a special interest in Backend Stuff. love <strong><code>NodeJS</code></strong>
+                            and <strong><code>reactJS</code></strong>.
+                            I love searching and using new frameworks and libraries.
+                            <br />
+                            <strong><code> Javascript + Typescript </code> : </strong> Best Combo
+                            <br />
+                            <strong> <code> Python </code> </strong> for competitive programing <strong>; </strong><span
+                                class="aui-lozenge aui-lozenge-moved">Reason</span> its simple
+                            <br />
+                            First Language <strong> <code>C++</code> </strong>
+                            <br />
+                            Special Interest in <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-Complete">
+                                <strong> Blockchain</strong> </span> &amp; <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-Complete">
+                                <strong> Security</strong> </span> stuff
                         </p>
-                        </div>
-                        <div class="px-6 py-4">
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">php</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">csrf-protection</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">csrf-tokens</span>
+                    </div>
+
+                    <!-- Gap -->
+                    <div class="h-24 my-4"></div>
+                    <!-- Gap End -->
+
+
+                    <div class="w-full p-6 text-center">
+                        <h1 class="big-text text-3xl box-underline  " id="projects">
+                            Projects
+                        </h1>
+                        <div class="w-full flex flex-wrap my-12">
+
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <a href="./doc-merng.html" class="no-underline  text-grey-darkest">
+                                    <div class=" overflow-hidden shadow-lg  ">
+                                        <img class="w-full" src="https://i.ytimg.com/vi/HKqbBrl_fKc/maxresdefault.jpg"
+                                            alt="Sunset in the mountains">
+                                        <div class="px-6 py-4">
+
+                                            <div class="font-bold text-xl mb-2">MERNG-BoilerPlate</div>
+
+
+
+                                            <p class="text-grey-darker text-base">
+                                                This is boilerplate for MERN stack with GraphQL and with integrations
+                                                like
+                                                Redux and SSR
+                                            </p>
+                                        </div>
+                                        <div class="px-6 py-4">
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">nodejs</span>
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">redux</span>
+
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">graphql</span>
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">mongodb</span>
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">ssr</span>
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
+                                            <span class="inline-block m-2 bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">expressjs</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <a href="./csrf_token.html" class="no-underline  text-grey-darkest">
+
+                                    <div class="overflow-hidden shadow-lg  ">
+                                        <img class="w-full" src="https://cdn-images-1.medium.com/max/1600/1*g_ISMQPCQpjw-6w3JRFUKQ.png"
+                                            alt="Sunset in the mountains">
+                                        <div class="px-6 py-4">
+                                            <div class="font-bold text-xl mb-2">CSRF-token-php-Manual</div>
+                                            <p class="text-grey-darker text-base">
+                                                In this project I have shown how the SIMPLE idea behind the protection
+                                                of
+                                                CROSS-SITE-REQUEST-FORGERY attacks is implement using CSRF-TOKEN
+                                            </p>
+                                        </div>
+                                        <div class="px-6 py-4">
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">php</span>
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">csrf-protection</span>
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">csrf-tokens</span>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+
+
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="https://cdnhtml5hive.azureedge.net/wp-content/uploads/2015/10/react-tutorial-beginners.png?x25428"
+                                        alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">react-layout-handler</div>
+                                        <p class="text-grey-darker text-base">
+                                            This is a react layout package to help you managing your UI layout
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">layouts</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">reactjs-components</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="https://media.coindesk.com/uploads/2016/02/Screen-Shot-2016-02-24-at-10.42.13-AM-e1456328600212.png"
+                                        alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">DAPP-Wallet</div>
+                                        <p class="text-grey-darker text-base">
+                                            JavaScript Updated 20 days ago
+                                            wallet-DAPP
+                                            A one way wallet build on top of solidity contract , NodeJS and frontend by
+                                            web3 , ReactJS
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">redux</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">reactjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">web3js</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">solidity-contracts</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="https://i.pinimg.com/736x/11/b9/c8/11b9c8c58c7e6b4c65552740817f1822--dashboard-ui-dashboard-design.jpg"
+                                        alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">RealTime-Notifcation-MERN-GraphQL</div>
+                                        <p class="text-grey-darker text-base">
+                                            MERN + GraphQL stack ,Notification Using Websockets
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">graphql</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">Websockets</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">reactjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">mongodb</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">
+                                            apollo-client</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="https://cdn-images-1.medium.com/max/811/1*tOitxCwTNcS3ESstLylmtg.png"
+                                        alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">open-chat-with-socket.io</div>
+                                        <p class="text-grey-darker text-base">
+                                            This is simple open chat based on node.js with socket.io and mongodb
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">SocketIO</span>
+
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">mongodb</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="http://jwt.io/img/logo-asset.svg" alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">EASY-JWT</div>
+                                        <p class="text-grey-darker text-base">
+                                            Simple JWT lib for raw php
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">Php</span>
+
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">JWT</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
+                                <div class="overflow-hidden shadow-lg  ">
+                                    <img class="w-full" src="https://cdn-images-1.medium.com/max/1600/1*OGCE-B4onkKZyAzf1Ge0Ew.png"
+                                        alt="Sunset in the mountains">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold text-xl mb-2">QnA-WebApp-using-Laravel_php</div>
+                                        <p class="text-grey-darker text-base">
+                                            Stackoverflow/Quora like website using php-laravel
+                                        </p>
+                                    </div>
+                                    <div class="px-6 py-4">
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">PhP</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">Laravel</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">MySQL</span>
+                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">SQL</span>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
 
+                    <div class="w-full text-center ">
+                        <div class='skills-set  ' id="skills">
+                            <h1 class="big-text box-underline  " id="projects">
+                                Skill Sets
+                            </h1>
+                            <div class='container'>
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Php
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 70%;">70%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            NodeJS
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 70%;">70%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            JS
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 80%;">80%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Ethereum
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 30%;">30%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            ReactJS
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 70%;">70%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Laravel
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 75%;">75%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            GraphQL
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 60%;">60%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Security
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 25%;">25%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            C++
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 75%;">75%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Backend Developent
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 75%;">75%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            UI/UX
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 65%;">65%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            DevOps
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 25%;">25%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                                <!-- copy till here -->
+                                <!-- copy from here -->
+                                <div class="fl sd px-4">
+                                    <div class='fl smalld'>
+                                        <p class='skills-p text-2xl'>
+                                            Database
+                                        </p>
+                                    </div>
+                                    <div class='fr xd'>
+                                        <div class='skill-chart' style="width: 75%;">75%</div>
+                                    </div>
+                                    <div class='fclr'></div>
+                                </div>
+                            </div>
 
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://cdnhtml5hive.azureedge.net/wp-content/uploads/2015/10/react-tutorial-beginners.png?x25428" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">react-layout-handler</div>
-                        <p class="text-grey-darker text-base">
-                                This is a react layout package to help you managing your UI layout
-                        </p>
-                        </div>
-                        <div class="px-6 py-4">
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">layouts</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">reactjs-components</span>
                         </div>
 
-                    </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://media.coindesk.com/uploads/2016/02/Screen-Shot-2016-02-24-at-10.42.13-AM-e1456328600212.png" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">DAPP-Wallet</div>
-                        <p class="text-grey-darker text-base">
-                                JavaScript Updated 20 days ago
-                                wallet-DAPP
-                                A one way wallet build on top of solidity contract , NodeJS and frontend by web3 , ReactJS
-                        </p>
-                        </div>
-                        <div class="px-6 py-4">
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">redux</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">reactjs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">web3js</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">solidity-contracts</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://i.pinimg.com/736x/11/b9/c8/11b9c8c58c7e6b4c65552740817f1822--dashboard-ui-dashboard-design.jpg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">RealTime-Notifcation-MERN-GraphQL</div>
-                            <p class="text-grey-darker text-base">
-                                MERN + GraphQL stack ,Notification Using Websockets
-                            </p>
-                        </div>
-                        <div class="px-6 py-4">
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">graphql</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">Websockets</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">reactjs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">mongodb</span>
-                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2"> apollo-client</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://cdn-images-1.medium.com/max/811/1*tOitxCwTNcS3ESstLylmtg.png" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">open-chat-with-socket.io</div>
-                            <p class="text-grey-darker text-base">
-                                This is simple open chat based on node.js with socket.io and mongodb
-                            </p>
-                        </div>
-                        <div class="px-6 py-4">
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">SocketIO</span>
-
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">nodejs</span>
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">expressjs</span>
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">mongodb</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="http://jwt.io/img/logo-asset.svg" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">EASY-JWT</div>
-                            <p class="text-grey-darker text-base">
-                                Simple JWT lib for raw php
-                            </p>
-                        </div>
-                        <div class="px-6 py-4">
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">Php</span>
-
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">JWT</span>
-                    </div>
-
-                    </div>
-                </div>
-                <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
-                    <div class="overflow-hidden shadow-lg  ">
-                        <img class="w-full" src="https://cdn-images-1.medium.com/max/1600/1*OGCE-B4onkKZyAzf1Ge0Ew.png" alt="Sunset in the mountains">
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">QnA-WebApp-using-Laravel_php</div>
-                            <p class="text-grey-darker text-base">
-                                    Stackoverflow/Quora like website using php-laravel
-                            </p>
-                        </div>
-                        <div class="px-6 py-4">
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">PhP</span>
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">Laravel</span>
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">MySQL</span>
-                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker m-2">SQL</span>
-                        </div>
-
-                    </div>
-                </div>
+                </section>
+            </div>
         </div>
+    </section>
 
-    </div>
 
-    <div w3-include-html="./layout/skills.html"></div>
 
 
 </body>
-    <script>
-      w3.includeHTML();
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
+<script src="https://unpkg.com/@atlassian/aui@8.1.0/dist/aui/aui-prototyping.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+
 </html>

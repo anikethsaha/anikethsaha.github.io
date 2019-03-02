@@ -1,0 +1,11 @@
+.box-underline::after{
+    content: "";
+    background-color: #7beec7;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    z-index: -1;
+    width: 102%;
+    height: 20px;
+    transform: rotate(-2deg);
+}
