@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/preflight.min.css">
     <link rel="stylesheet" href="style/utilities.min.css">
     <link rel="stylesheet" href="style/tailwind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@atlassian/aui@8.1.0/dist/aui/aui-prototyping.css" />
@@ -56,21 +58,47 @@
                             <div class="aui-sidebar-group aui-sidebar-group-actions">
 
                                 <!-- the AUI Nav heading will be used as the tooltip text -->
-                                <div class="aui-nav-heading" title="Actions">
-                                    <strong>Actions</strong>
+                                <div class="aui-nav-heading" >
+                                    <strong>Links</strong>
                                 </div>
 
                                 <!-- If a sidebar group does not have a nav heading, then the aui-nav's title attribute will be used
                                      for the tooltip for the group -->
-                                <ul class="aui-nav" title="Page actions">
+                                <ul class="aui-nav" >
                                     <li>
-                                        <a class="aui-nav-item" href="#" title="Edit">Edit</a>
+
+                                        <a class="aui-nav-item" href="#">
+                                            <span><img class="social-icon" src="https://img.icons8.com/metro/52/000000/github.png"></span>
+                                            Github</a>
                                     </li>
                                     <li>
-                                        <a class="aui-nav-item" href="#" title="View">View</a>
+                                        <a class="aui-nav-item" href="#" >
+                                            <span><img class="social-icon" src="https://img.icons8.com/metro/26/000000/linkedin.png"></span>
+                                            Linkedin</a>
                                     </li>
                                     <li>
-                                        <a class="aui-nav-item" href="#" title="Share">Share</a>
+                                        <a class="aui-nav-item" href="#" >
+                                            <span><i class="fab fa-stack-overflow social-icon"></i></span>
+                                            Stackoverflow</a>
+                                    </li>
+                                    <li>
+                                        <a class="aui-nav-item" href="#" >
+                                            <span><i class="fab fa-twitter social-icon"></i></span>
+                                            Twitter</a>
+
+                                    </li>
+                                    <li>
+                                            <a class="aui-nav-item" href="#" >
+                                                <span><i class="fab fa-hackerrank social-icon"></i></span>
+                                                Hackerrank</a>
+
+                                        </li>
+
+                                    <li>
+                                        <a class="aui-nav-item" href="#" >
+                                            <span><i class="fab fa-gitter social-icon"></i></span>
+                                            Gitter</a>
+
                                     </li>
                                 </ul>
                             </div>
@@ -81,7 +109,7 @@
 
                                 <!-- in a "Tier One" Sidebar group, AUI Nav heading is ignored, and each nav item's label will be used
                                      as the tooltip text instead -->
-                                <div class="aui-nav-heading" title="Stuff">
+                                <div class="aui-nav-heading">
                                     <strong>Navigation</strong>
                                 </div>
 
@@ -98,7 +126,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="aui-nav-item" href="#projects" title="This is a really really long title for whatever this is">
+                                        <a class="aui-nav-item" href="#projects">
                                             <span class="aui-icon aui-icon-small aui-iconfont-book"></span>
                                             <span class="aui-nav-item-label">Projects</span>
                                         </a>
@@ -109,24 +137,8 @@
                                             <span class="aui-nav-item-label">Skills</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a class="aui-nav-item" href="#">
-                                            <span class="aui-icon aui-icon-small aui-iconfont-time"></span>
-                                            <span class="aui-nav-item-label">Versions</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="aui-nav-item" href="#">
-                                            <span class="aui-icon aui-icon-small aui-iconfont-devtools-submodule"></span>
-                                            <span class="aui-nav-item-label">Components</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="aui-nav-item" href="#">
-                                            <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag"></span>
-                                            <span class="aui-nav-item-label">Labels</span>
-                                        </a>
-                                    </li>
+
+
                                 </ul>
                             </div>
                         </div>
@@ -244,23 +256,25 @@
                             </div>
                             <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
 
+                                <a href="./react-layout-h.html">
+                                    <div class="overflow-hidden shadow-lg  ">
+                                        <img class="w-full" src="https://cdnhtml5hive.azureedge.net/wp-content/uploads/2015/10/react-tutorial-beginners.png?x25428"
+                                            alt="Sunset in the mountains">
+                                        <div class="px-6 py-4">
+                                            <div class="font-bold text-xl mb-2">react-layout-handler</div>
+                                            <p class="text-grey-darker text-base">
+                                                This is a react layout package to help you managing your UI layout
+                                            </p>
+                                        </div>
+                                        <div class="px-6 py-4">
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">layouts</span>
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
+                                            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">reactjs-components</span>
+                                        </div>
 
-                                <div class="overflow-hidden shadow-lg  ">
-                                    <img class="w-full" src="https://cdnhtml5hive.azureedge.net/wp-content/uploads/2015/10/react-tutorial-beginners.png?x25428"
-                                        alt="Sunset in the mountains">
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold text-xl mb-2">react-layout-handler</div>
-                                        <p class="text-grey-darker text-base">
-                                            This is a react layout package to help you managing your UI layout
-                                        </p>
                                     </div>
-                                    <div class="px-6 py-4">
-                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">layouts</span>
-                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">reactjs</span>
-                                        <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">reactjs-components</span>
-                                    </div>
+                                </a>
 
-                                </div>
                             </div>
                             <div class="px-4 sm:w-full p-4 md:w-1/3 lg:w-1/3 xl:w-1/3">
                                 <div class="overflow-hidden shadow-lg  ">
