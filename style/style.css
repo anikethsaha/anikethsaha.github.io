@@ -12,6 +12,107 @@ a:hover{
     margin: auto .2rem;
     font-size: 20px;
 }
+
+
+/*
+////////////////// progress
+
+
+
+
+*/
+
+
+
+
+
+@keyframes bar-fill {
+    0% {
+      width: 0;
+    }
+  }
+  @-webkit-keyframes bar-fill {
+    0% {
+      width: 0;
+    }
+  }
+  @-moz-keyframes bar-fill {
+    0% {
+      width: 0;
+    }
+  }
+  @-o-keyframes bar-fill {
+    0% {
+      width: 0;
+    }
+  }
+  .bar-graph {
+    list-style: none;
+    margin: 50px 0px auto;
+  }
+
+  .bar-wrap {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(218, 255, 242);
+    border: 1px solid rgb(182, 248, 225);
+    margin-bottom: 10px;
+  }
+
+  .bar-fill {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-animation: bar-fill 1s;
+    -webkit-animation: bar-fill 1s;
+    -ms-animation: bar-fill 1s;
+    animation: bar-fill 1s;
+    background-color: #7beec7;
+    display: block;
+    height: 15px;
+    width: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+////////////// progress ends here
+
+
+
+*/
+
+
+.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: inherit;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: inherit;	}
+}
+
+
 .my-p{
     font-family: "Proxima Nova",sans-serif;
     font-size: 1.3em;
