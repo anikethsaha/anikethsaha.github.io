@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aniketh Saha</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    :root {
+      --theme-color: #3f20ba;
+    }
+    * {
+      font-size: 1.2rem;
+      font-family: 'Kanit', sans-serif;
+    }
+    .app-nav {
+      right: 10rem;
+    }
+    body {
+      margin: auto;
+      width: 80%;
+    }
+    main {
+      width: 100%;
+    }
+    footer {
+      font-size: 0.8rem;
+
+      margin-top: 3rem;
+      text-align: center;
+    }
+    footer p,
+    footer a {
+      font-size: 0.8rem;
+    }
+    #docsify-footer-note {
+      font-size: 1rem;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: 'aniketh saha',
+        repo: '',
+        loadNavbar: true,
+        relativePath: true,
+        plugins: [
+          
+          function(hook, vm) {
+            hook.afterEach(function(html, next) {
+              var socialSec = `
+              <div>
+                <a href="//twitter.com/__ANIX__"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="//github.com/anikethsaha"><i class="fa fa-github" aria-hidden="true"></i></i></a>
+                <a href="mailto:anik220798@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+                 <a href="https://www.instagram.com/anikethsaha/"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                 <a href="https://www.facebook.com/aniketh.saha.5"><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+              
+                 </div>
+              `
+              console.log('vm', vm)
+              html = ` ${socialSec}
+              ${html}
+
+             <footer>
+               Site built using <a id="docsify-footer-note" href="//github.com/docsifyjs/docsify">docsify</a>
+              <p>icon by <a href="https://icons8.com">Icons8</a> and <a href="https://fontawesome.com/">font-awesome</a></p>
+              </footer>
+              `
+              next(html)
+            })
+          },
+          // Waiting for the hideSidebar option from the core
+          function(hooks, vm) {
+            hooks.ready(function() {
+              document.querySelector('aside.sidebar').style.display = 'none'
+              document.querySelector('button.sidebar-toggle').style.display =
+                'none'
+              document.querySelector('section.content').style.right = 'unset'
+              document.querySelector('section.content').style.left = 'unset'
+              document.querySelector('section.content').style.position =
+                'relative'
+              document.querySelector('section.content').style.width = '100%'
+            })
+          }
+        ]
+      }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  </body>
+</html>
