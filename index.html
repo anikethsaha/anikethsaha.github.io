@@ -20,39 +20,9 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style//style.css">
   </head>
-  <style>
-    :root {
-      --theme-color: #3f20ba;
-    }
-    * {
-      font-size: 1.2rem;
-      font-family: 'Kanit', sans-serif;
-    }
-    .app-nav {
-      right: 10rem;
-    }
-    body {
-      margin: auto;
-      width: 80%;
-    }
-    main {
-      width: 100%;
-    }
-    footer {
-      font-size: 0.8rem;
 
-      margin-top: 3rem;
-      text-align: center;
-    }
-    footer p,
-    footer a {
-      font-size: 0.8rem;
-    }
-    #docsify-footer-note {
-      font-size: 1rem;
-    }
-  </style>
   <body>
     <div id="app"></div>
     <script>
@@ -62,7 +32,12 @@
         loadNavbar: true,
         relativePath: true,
         plugins: [
-          
+          function(hook,vm){
+            hook.afterEach(function(html,next){
+        
+              next(html)
+            })
+          },
           function(hook, vm) {
             hook.afterEach(function(html, next) {
               var socialSec = `

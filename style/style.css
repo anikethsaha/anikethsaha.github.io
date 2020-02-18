@@ -1,0 +1,37 @@
+
+    :root {
+      --theme-color: #3f20ba;
+      --theme-background-color : white;
+    }
+    * {
+      font-size: 1.2rem;
+      font-family: 'Kanit', sans-serif;
+    }
+    .app-nav {
+      right: 10rem;
+    }
+    html{
+      background: var(--theme-background-color);
+    }
+    body {
+      background: var(--theme-background-color);
+      margin: auto;
+      width: 80%;
+    }
+    main {
+      width: 100%;
+    }
+    footer {
+      font-size: 0.8rem;
+
+      margin-top: 3rem;
+      text-align: center;
+    }
+    footer p,
+    footer a {
+      font-size: 0.8rem;
+    }
+    #docsify-footer-note {
+      font-size: 1rem;
+    }
+    
