@@ -1,6 +1,6 @@
 # Aniketh Saha
 
-I am Web developer with a special interest in ASTs and frontend Stuff. love NodeJS and reactJS. I like creating tools for improving developer experiences. A big fan of plugin architecture.
+I am Web developer with a special interest in working with ASTs and frontend Stuff. love NodeJS and reactJS. I like creating tools for improving developer experiences. A big fan of plugin architecture.
 
 ## Open source
 
