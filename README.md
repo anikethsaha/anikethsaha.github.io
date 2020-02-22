@@ -13,7 +13,7 @@
 
 - [ ] PWA
 - [ ] Responsive (loads of media queries)
-- [ ] dark mode
+- [X] dark mode
 - [ ] separate pages of each nav bar options
 - [ ] The content of the blog
 
