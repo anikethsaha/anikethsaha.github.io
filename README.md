@@ -1,6 +1,6 @@
 # Aniketh Saha
 
-I am Web developer with a special interest in working with ASTs and frontend Stuff. love NodeJS and reactJS. I like creating tools for improving developer experiences. A big fan of plugin architecture.
+I am developer with a special interest in working with ASTs and frontend Stuff. love NodeJS and reactJS. I like creating tools for improving developer experiences. A big fan of plugin architecture.
 
 ## Open source
 
@@ -18,6 +18,13 @@ A bundler for javascript and friends. Packs many modules into a few bundled asse
 <a href="//github.com/webpack"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a href="https://webpack.js.org/"><i class="fa fa-link" aria-hidden="true"></i></a>
 
+### 4. `cssnano` - maintainer
+
+A modular minifier, built on top of the PostCSS ecosystem.
+
+<a href="//github.com/cssnano"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://cssnano.co/"><i class="fa fa-link" aria-hidden="true"></i></a>
+
 ### 3. `verdaccio` - member
 
 A lightweight private npm proxy registry
@@ -25,14 +32,7 @@ A lightweight private npm proxy registry
 <a href="//github.com/verdaccio"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a href="https://verdaccio.org/"><i class="fa fa-link" aria-hidden="true"></i></a>
 
-### 4. `cssnano` - contributor
-
-A modular minifier, built on top of the PostCSS ecosystem.
-
-<a href="//github.com/cssnano"><i class="fa fa-github" aria-hidden="true"></i></a>
-<a href="https://cssnano.co/"><i class="fa fa-link" aria-hidden="true"></i></a>
-
-### 4. `posthtml` - member/collaborator
+### 4. `posthtml` - collaborator
 
 PostHTML is a tool to transform HTML/XML with JS plugins
 
