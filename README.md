@@ -4,12 +4,19 @@ I am developer with a special interest in working with ASTs and frontend Stuff. 
 
 ## Open source
 
-### 1. `docsify` - core
+### 1. `Eslint` - Committer
 
-A magical documentation site generator.
+Find and fix problems in your JavaScript code.
 
-<a href="//github.com/docsify/docsify"><i class="fa fa-github" aria-hidden="true"></i></a>
-<a href="https://docsify.js.org/#/"><i class="fa fa-link" aria-hidden="true"></i></a>
+<a href="//github.com/eslint/eslint"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://eslint.org/"><i class="fa fa-link" aria-hidden="true"></i></a>
+
+### 4. `cssnano` - maintainer
+
+A modular minifier, built on top of the PostCSS ecosystem.
+
+<a href="//github.com/cssnano"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://cssnano.co/"><i class="fa fa-link" aria-hidden="true"></i></a>
 
 ### 2. `webpack` - member
 
@@ -18,12 +25,12 @@ A bundler for javascript and friends. Packs many modules into a few bundled asse
 <a href="//github.com/webpack"><i class="fa fa-github" aria-hidden="true"></i></a>
 <a href="https://webpack.js.org/"><i class="fa fa-link" aria-hidden="true"></i></a>
 
-### 4. `cssnano` - maintainer
+### 1. `docsify` - core
 
-A modular minifier, built on top of the PostCSS ecosystem.
+A magical documentation site generator.
 
-<a href="//github.com/cssnano"><i class="fa fa-github" aria-hidden="true"></i></a>
-<a href="https://cssnano.co/"><i class="fa fa-link" aria-hidden="true"></i></a>
+<a href="//github.com/docsify/docsify"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://docsify.js.org/#/"><i class="fa fa-link" aria-hidden="true"></i></a>
 
 ### 3. `verdaccio` - member
 
